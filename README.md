@@ -63,9 +63,12 @@ You can:
 - Suggest new features
 - Submit pull requests
 
+## Credit
+
+The original idea for this plugin does not come from Hack’olyte; it was discovered during CTFd competitions in 2025.
+
 ## License
 
 This plugin is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
-The original idea for this plugin does not come from Hack’olyte; it was discovered during CTFd competitions in 2025.
 
