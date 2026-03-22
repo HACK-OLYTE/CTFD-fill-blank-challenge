@@ -1,0 +1,69 @@
+{% extends "admin/challenges/update.html" %}
+
+{% block header %}
+<div class="alert alert-info d-flex align-items-center gap-2" role="alert">
+    <i class="fas fa-fill-drip fa-lg me-2"></i>
+    <div>
+        <strong>Fill in the Blank</strong> — Edit the text with numbered blanks
+        <code>[[1]]</code>, <code>[[2]]</code>… and the expected answers.
+    </div>
+</div>
+{% endblock %}
+
+{% block value %}
+<div class="form-group">
+    <label for="value">Points
+        <small class="form-text text-muted">Awarded when all blanks are correct</small>
+    </label>
+    <input type="number" class="form-control" name="value" value="{{ challenge.value }}" required>
+</div>
+
+<hr class="my-4">
+<h6 class="text-uppercase text-muted fw-bold mb-3">
+    <i class="fas fa-pen me-2"></i>Blank text
+</h6>
+
+<div class="form-group mb-3">
+    <label for="fb-blank-text-input">
+        Text with blanks
+        <small class="form-text text-muted d-block">
+            Use <code>[[1]]</code>, <code>[[2]]</code>, etc. to mark blanks.
+        </small>
+    </label>
+    <textarea class="form-control font-monospace"
+              id="fb-blank-text-input"
+              name="blank_text"
+              rows="5"
+              required>{{ challenge.blank_text }}</textarea>
+</div>
+
+<div id="fb-preview-area" class="mb-3" style="display:none;">
+    <label class="form-label text-muted"><i class="fas fa-eye me-1"></i>Preview</label>
+    <div id="fb-preview-content"
+         class="border rounded p-3 bg-light"
+         style="font-size:1rem;line-height:1.8;"></div>
+</div>
+
+<hr class="my-4">
+<h6 class="text-uppercase text-muted fw-bold mb-3">
+    <i class="fas fa-key me-2"></i>Expected answers
+</h6>
+<p class="text-muted small">
+    Click <strong>Detect blanks</strong> to reload the answer fields, then edit the answers.
+</p>
+
+<div class="mb-3">
+    <button type="button" class="btn btn-outline-secondary btn-sm" id="fb-detect-btn">
+        <i class="fas fa-search me-1"></i>Detect blanks
+    </button>
+</div>
+
+<div id="fb-answers-container"></div>
+
+<input type="hidden" name="answers" id="fb-answers-json" value="{}">
+
+<script>
+window.FB_CHALLENGE_ID = {{ challenge.id | tojson }};
+window.FB_API_BASE = {{ ("/plugins/" + _fb_plugin_dir + "/api") | tojson }};
+</script>
+{% endblock %}

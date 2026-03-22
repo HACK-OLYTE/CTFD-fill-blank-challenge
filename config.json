@@ -1,0 +1,6 @@
+{
+  "name": "ctfd-fill-blank-challenge",
+  "version": "1.0.0",
+  "description": "Adds a 'Fill in the Blank' challenge type (fill_blank) to CTFd.",
+  "author": "Association Hack'olyte - hackolyte.fr"
+}

@@ -1,0 +1,78 @@
+/* Fill in the Blank — shared styles (admin + user) */
+
+.fb-input {
+    display: inline-block;
+    width: 5em;
+    min-width: 5em;
+    max-width: 20em;
+    border: none;
+    border-bottom: 2px solid #6c757d;
+    background: transparent;
+    text-align: center;
+    font-size: 1em;
+    padding: 1px 4px;
+    margin: 0 2px;
+    outline: none;
+    transition: border-color .2s, background .2s, color .2s;
+    border-radius: 0;
+    vertical-align: middle;
+    line-height: 1.4;
+}
+
+.fb-input:focus {
+    border-bottom-color: #0d6efd;
+    background: rgba(13, 110, 253, .06);
+}
+
+.fb-input.fb-correct {
+    border-bottom-color: #198754;
+    background: rgba(25, 135, 84, .08);
+    color: #198754;
+    font-weight: 600;
+}
+
+.fb-input.fb-incorrect {
+    border-bottom-color: #dc3545;
+    background: rgba(220, 53, 69, .08);
+    color: #dc3545;
+}
+
+.fb-label {
+    font-size: 0.62em;
+    color: #6c757d;
+    margin-right: 1px;
+    vertical-align: super;
+}
+
+.fb-blank-zone {
+    font-size: 1.05rem;
+    line-height: 2.4;
+}
+
+.fb-blank-wrap {
+    display: inline;
+}
+
+.fb-feedback {
+    font-size: 0.9rem;
+    border-radius: 8px;
+}
+
+/* Prevent submission text from overflowing the challenge modal */
+#submissions code {
+    white-space: normal;
+    word-break: break-all;
+}
+
+/* Admin preview */
+#fb-preview-content {
+    font-size: 1rem;
+    line-height: 2.2;
+    min-height: 40px;
+}
+
+#fb-preview-content .fb-input {
+    pointer-events: none;
+    color: #adb5bd;
+    border-bottom-color: #adb5bd;
+}

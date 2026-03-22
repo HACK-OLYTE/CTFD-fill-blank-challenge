@@ -1,0 +1,14 @@
+{% extends "challenge.html" %}
+
+{% block description %}
+{{ challenge.html }}
+<div id="fb-blank-zone" class="fb-blank-zone mt-3"
+     data-blank-text="{{ challenge.blank_text | e }}"
+     data-blank-count="{{ challenge.blank_count }}">
+</div>
+{% endblock %}
+
+{% block input %}
+<input id="challenge-id" class="challenge-id" type="hidden" value="{{ challenge.id }}">
+<input id="challenge-input" class="challenge-input" type="hidden" name="submission" x-model="submission">
+{% endblock %}
