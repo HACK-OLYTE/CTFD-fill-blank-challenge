@@ -23,9 +23,9 @@ CTFd/plugins/ctfd-fill-blank-challenge/
 
 ## Screens 
 
-<img width="1277" height="779" alt="trou1" src="https://github.com/user-attachments/assets/1200a760-cb02-4ea6-ac56-f832ce75a220" />
-<img width="963" height="839" alt="trou2" src="https://github.com/user-attachments/assets/0b0109d7-e48a-4988-b282-8749aa4127bb" />
-<img width="823" height="843" alt="trou3" src="https://github.com/user-attachments/assets/87235f2f-fd58-415f-9f46-85d47ac65cb1" />
+<img width="1000" height="779" alt="trou1" src="https://github.com/user-attachments/assets/1200a760-cb02-4ea6-ac56-f832ce75a220" />
+<img width="400" height="839" alt="trou2" src="https://github.com/user-attachments/assets/0b0109d7-e48a-4988-b282-8749aa4127bb" />
+<img width="400" height="843" alt="trou3" src="https://github.com/user-attachments/assets/87235f2f-fd58-415f-9f46-85d47ac65cb1" />
 
 
 
