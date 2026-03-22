@@ -65,7 +65,8 @@ You can:
 
 ## Credit
 
-The original idea for this plugin does not come from Hack’olyte; it was discovered during CTFd competitions in 2025.
+The original idea for this plugin does not come from Hack’olyte; it was discovered during CTFd competitions in 2025. <br>
+[@MEDILEAKCTF](https://oscarzulu.org/)
 
 ## License
 
